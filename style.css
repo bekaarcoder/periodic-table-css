@@ -182,3 +182,100 @@ h2 {
     grid-column: 17 / 19;
     border: none;
 }
+
+
+
+
+/* EXPERIMENT */
+
+.blues-element {
+    border: none;
+    background: linear-gradient(to bottom right, #91b0ff 0%, #715aff 100%);
+    color: #5887ff;
+    transition: 0.5s;
+}
+
+.greens-element {
+    border: none;
+    background: linear-gradient(to bottom right, #a2f8b6 0%, #19d181 100%);
+    color: #80ed99;
+    transition: 0.5s;
+}
+
+.yellows-element {
+    border: none;
+    background: linear-gradient(to bottom right, #fcde66 0%, #fbaf00 100%);
+    color: #ffd639;
+    transition: 0.5s;
+}
+
+.reds-element {
+    border: none;
+    background: linear-gradient(to bottom right, #f58b9b 0%, #f82836 100%);
+    color: #fc5f77;
+    transition: 0.5s;
+}
+
+.blues-element:after,
+.reds-element:after,
+.yellows-element:after,
+.greens-element:after {
+    content: attr(data-desc);
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    background-color: aliceblue;
+    z-index: 10;
+    font-size: 14px;
+    text-align: center;
+    padding: 4px;
+    border-radius: 4px;
+    transform: translateX(-25%) translateY(-100%);
+    opacity: 0;
+    transition: all 0.3s ease 0.3s;
+}
+
+.blues-element:hover:after,
+.reds-element:hover:after,
+.yellows-element:hover:after,
+.greens-element:hover:after {
+    transform: translateX(-25%) translateY(50%);
+    opacity: 1;
+    z-index: 10;
+}
+
+/* .blue-element::before,
+.green-element::before,
+.yellow-element::before,
+.red-element::before {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 8px;
+    background-color: aliceblue;
+    transform: translateX(-100%) rotate(45deg);
+    top: 23px;
+    left: 0;
+    transition: all 0.3s;
+} */
+
+/* .blue-element:hover::before,
+.green-element:hover::before,
+.yellow-element:hover::before,
+.red-element:hover::before {
+    transform: translateX(100%) rotate(45deg);
+} */
+
+.blues-element:hover,
+.yellows-element:hover,
+.greens-element:hover,
+.reds-element:hover {
+    transform: scale(1.1);
+    z-index: 10;
+}
+
+
+
+
+
+
