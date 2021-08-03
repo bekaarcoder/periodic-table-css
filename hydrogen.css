@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+
+h1.page-header{
+    border-bottom: 2px solid #000000;
+    color: #20639b;
+    font-family: 'Acme', sans-serif;
+    font-size:38px;
+    font-weight: 500;
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin: 0 0 20px;
+    padding-bottom: 10px;
+    /* text-align: center; */
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
